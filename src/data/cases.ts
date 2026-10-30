@@ -5,9 +5,13 @@ import bossImg3 from "@/imports/2025_BOSS_x_AMF1_immersive_spatial_experience_16
 import bossImg4 from "@/imports/2025_BOSS_x_AMF1_immersive_spatial_experience_16x9_004__original_kopiera.webp";
 import burberryImage from "@/imports/Burberry_cover.webp";
 import dinaImage from "@/imports/Dina_Fo_rsa_kringar_KV_dator_1200x1200px.webp";
-import officeBabyImage from "@/imports/Ikano_Bank_Factoring_cover.webp";
 import dinaPrint from "@/imports/DINA_PRINT_MOCK-UP_BIL.webp";
-import babyPrint from "@/imports/ikano_baby_print.webp";
+import unileverKV from "@/imports/Unilever_WC_KV.webp";
+import unileverInstallation from "@/imports/Unilever_WC_installation.webp";
+import unileverStyleSheet from "@/imports/Unilever_WC_style_sheet.webp";
+import unileverSpray from "@/imports/Unilever_WC_spray.webp";
+import unileverAiStation from "@/imports/Unilever_WC_ai_station.webp";
+import unileverJersey from "@/imports/Unilever_WC_jersey.webp";
 import ikeaImage from "@/imports/IKEA_COVER.webp";
 import trialLoanImage from "@/imports/IMG_7190.webp";
 import fjallfillImage from "@/imports/Fjallfil_squarespace_cover.webp";
@@ -87,6 +91,45 @@ export const cases: Case[] = [
       { type: "image", src: bossImg4 },
     ],
     image: bossImage,
+  },
+  {
+    id: "unilever-world-cup",
+    category: "Phygital Experience",
+    client: "Unilever × EPAM",
+    title: "Unilever × World Cup",
+    tagline: "Create Your Fit — fans sprayed, AI styled, and 600+ one-of-a-kind jerseys were printed on the spot at the FIFA World Cup 2026™.",
+    brief:
+      "The FIFA World Cup 2026™ is Unilever's biggest-ever sports partnership. In New York City, its House of Fresh creator hub put Rexona, Dove and Dove Men+Care at the heart of football culture — while Coca-Cola, adidas and FIFA itself competed for the same attention, in the same city, in the same weeks. The ask: first-of-its-kind technology with AI and personalisation at its core. Brand presence that didn't feel promotional, and a reason for creators to make, wear and share.",
+    idea:
+      "Football fandom is collective. Self-expression is individual. We set out to connect the two. Robots, light installations and AR were all on the table — but anything the room can't see isn't shareable, and a spectacle stays in the building. A memento leaves it. So we turned every creator into a designer: spray your own graffiti, let AI turn it into a one-of-a-kind jersey, and walk out wearing it.",
+    execution:
+      "Create Your Fit was a guided journey inside House of Fresh. At the Graffiti Station, guests picked up a phygital spray can — wrapped as Rexona, Dove or Dove Men+Care — and painted freehand on an LED canvas. At the AI Station, Google's Nano Banana 2 reinterpreted each sketch in six custom styles, from Retro and Street to Anime Panel, with every design checked against Unilever and FIFA guidelines. Anything that broke a rule was corrected, never rejected. Guests added their name and number, and minutes later collected a premium printed jersey in a House of Fresh gift box.",
+    quote: {
+      text: "Together, we created the next evolution of fan engagement. A truly personal, wearable moment for the football fans who stepped inside House of Fresh.",
+      author: "Ward De Kruiff",
+      role: "VP Consulting & Digital Innovation",
+    },
+    results: "600+ creators · 600+ one-of-a-kind jerseys worn in New York · 1M+ social media interactions · Top visited experience in House of Fresh",
+    role: "Idea & Concept",
+    year: "2026",
+    credits: [
+      { label: "Activation", value: "Create Your Fit" },
+      { label: "Agency", value: "EPAM Empathy Lab" },
+      { label: "Partners", value: "Made Real Lab · EPAM Physical Technology · Graffiti Plus" },
+      { label: "Technology", value: "Google Cloud · Nano Banana 2 · Unity" },
+      { label: "Brands", value: "Rexona · Dove · Dove Men+Care" },
+      { label: "Location", value: "House of Fresh, New York City" },
+    ],
+    media: [
+      { type: "vimeo", src: "https://player.vimeo.com/video/1241285803?h=8f4fe9820d&title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Unilever × World Cup — Create Your Fit" },
+      { type: "image", src: unileverInstallation, layout: "full" },
+      { type: "image", src: unileverStyleSheet, layout: "full" },
+      { type: "image", src: unileverSpray, layout: "third" },
+      { type: "image", src: unileverAiStation, layout: "third" },
+      { type: "image", src: unileverJersey, layout: "third" },
+    ],
+    image: unileverKV,
+    imagePosition: "35% center",
   },
   {
     id: "burberry-innovation",
@@ -172,32 +215,6 @@ export const cases: Case[] = [
       { type: "vimeo", src: "https://player.vimeo.com/video/192279986?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "IKEA — Midsommar Wahnsinns Preise" },
     ],
     image: ikeaImage,
-  },
-  {
-    id: "ikano-office-baby",
-    category: "Business, Baby",
-    client: "Ikano Bank",
-    title: "Ikano Bank — Office Baby",
-    tagline: "Tiny business owners in oversized suits, made for a very specific audience.",
-    brief:
-      "Small business owners seeking growth funding face a specific frustration: the financial world wasn't built for them. Standard B2B advertising responds with aspirational imagery — polished models, gleaming offices, confident handshakes. None of it reflects how it actually feels to be a small operator competing with much bigger players.",
-    idea:
-      "Cast one-year-old babies in custom-made business suits and adult wigs. Put them in the situations their grown-up counterparts face every day. The visual absurdity captured something emotionally precise: the feeling of being technically competent but visually out of place in a world designed for someone larger.",
-    execution:
-      "The hero film ran alongside digital banners, each carrying the same deadpan logic. The babies weren't played for cheap laughs — they were played straight, which made the campaign land harder. The target audience recognised themselves immediately.",
-    role: "Art Director",
-    year: "2020",
-    credits: [
-      { label: "Copywriter", value: "Kristin Bergem" },
-      { label: "Deliverables", value: "Hero film · Digital banners" },
-    ],
-    media: [
-      { type: "vimeo", src: "https://player.vimeo.com/video/192276326?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Ikano Bank — Office Baby" },
-      { type: "vimeo", src: "https://player.vimeo.com/video/192276904?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Ikano Bank — Office Baby 2" },
-      { type: "image", src: babyPrint, layout: "full" },
-    ],
-    image: officeBabyImage,
-    imagePosition: "center",
   },
   {
     id: "vasterbottensost",
