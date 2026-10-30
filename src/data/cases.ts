@@ -7,6 +7,9 @@ import burberryImage from "@/imports/Burberry_cover.webp";
 import dinaImage from "@/imports/Dina_Fo_rsa_kringar_KV_dator_1200x1200px.webp";
 import dinaPrint from "@/imports/DINA_PRINT_MOCK-UP_BIL.webp";
 import unileverKV from "@/imports/Unilever_WC_KV.webp";
+import unileverArrive from "@/imports/Unilever_WC_00a_arrive.webp";
+import unileverEnter from "@/imports/Unilever_WC_00b_enter.webp";
+import unileverHouse from "@/imports/Unilever_WC_00c_house.webp";
 import unileverSpray from "@/imports/Unilever_WC_01_spray.webp";
 import unileverAiStation from "@/imports/Unilever_WC_02_ai_station.webp";
 import unileverMakeItYours from "@/imports/Unilever_WC_03_make_it_yours.webp";
@@ -125,6 +128,9 @@ export const cases: Case[] = [
     ],
     media: [
       { type: "vimeo", src: "https://player.vimeo.com/video/1241285803?h=8f4fe9820d&badge=0&autopause=0&player_id=0&app_id=58479", title: "Unilever x World Cup" },
+      { type: "image", src: unileverArrive, layout: "story", caption: "Arrive" },
+      { type: "image", src: unileverEnter, layout: "story", caption: "Step inside" },
+      { type: "image", src: unileverHouse, layout: "story", caption: "House of Fresh" },
       { type: "image", src: unileverSpray, layout: "story", caption: "Spray your graffiti" },
       { type: "image", src: unileverAiStation, layout: "story", caption: "AI styles it" },
       { type: "image", src: unileverMakeItYours, layout: "story", caption: "Make it yours" },
