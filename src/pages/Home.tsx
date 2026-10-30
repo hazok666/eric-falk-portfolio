@@ -59,7 +59,7 @@ export default function Home() {
           <p
             className="text-[#f0ede6]/30 text-[10px] tracking-[0.55em] uppercase font-sans mb-10"
           >
-            Conceptual Creative &nbsp;·&nbsp; Art Direction &nbsp;·&nbsp; Creative Technology
+            Creative Direction &nbsp;·&nbsp; Experience Design &nbsp;·&nbsp; Creative Technology
           </p>
 
           <h1
@@ -77,7 +77,7 @@ export default function Home() {
             className="text-[#f0ede6]/45 font-sans text-sm md:text-base mt-8 max-w-xl mx-auto leading-relaxed"
             style={{ fontWeight: 300, letterSpacing: "0.02em" }}
           >
-            I turn new technology into experiences people want to be part of — from spatial computing to generative AI, for brands like BOSS, Burberry and Unilever.
+            I turn emerging technology into human experiences — ideas people don't just see, but step into, shape and share.
           </p>
         </div>
 
