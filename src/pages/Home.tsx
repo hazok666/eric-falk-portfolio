@@ -74,10 +74,10 @@ export default function Home() {
           </h1>
 
           <p
-            className="text-[#f0ede6]/35 font-sans text-sm md:text-base mt-8 max-w-sm mx-auto leading-relaxed"
+            className="text-[#f0ede6]/45 font-sans text-sm md:text-base mt-8 max-w-xl mx-auto leading-relaxed"
             style={{ fontWeight: 300, letterSpacing: "0.02em" }}
           >
-            Making work that earns attention.
+            I turn new technology into experiences people want to be part of — from spatial computing to generative AI, for brands like BOSS, Burberry and Unilever.
           </p>
         </div>
 
