@@ -77,7 +77,8 @@ export default function Home() {
             className="text-[#f0ede6]/45 font-sans text-sm md:text-base mt-8 max-w-xl mx-auto leading-relaxed"
             style={{ fontWeight: 300, letterSpacing: "0.02em" }}
           >
-            I turn emerging technology into human experiences. Ideas people step into, shape and share.
+            <span className="block">I turn emerging technology into human experiences.</span>
+            <span className="block">Ideas people step into, shape and share.</span>
           </p>
         </div>
 

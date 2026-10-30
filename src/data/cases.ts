@@ -71,7 +71,7 @@ export const cases: Case[] = [
     id: "boss-vision-pro",
     category: "Spatial Experience",
     client: "BOSS × EPAM",
-    title: "BOSS — Step Inside the Mind of a Boss",
+    title: "BOSS: Step Inside the Mind of a Boss",
     tagline: "We took fans inside the mind of a BOSS, powered by Apple Vision Pro.",
     brief:
       "HUGO BOSS approached Empathy Lab and EPAM to cement its position as the world's leading premium, tech-driven fashion brand. The world of motor racing is notoriously inaccessible. With the Aston Martin Aramco Formula One® Team, we set out to turn the unattainable into the unforgettable. By fusing precision engineering, the thrill of speed and emotional storytelling, our goal was to create an experience that pushes the limits of innovation, reshaping fan engagement and raising the bar for how luxury brands connect with audiences everywhere.",
@@ -90,7 +90,7 @@ export const cases: Case[] = [
       { label: "Markets", value: "London · Paris · Düsseldorf · Barcelona · Las Vegas · Dubai · Singapore" },
     ],
     media: [
-      { type: "vimeo", src: "https://player.vimeo.com/video/1194032721?h=5d6405228f&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479", title: "BOSS — Step Inside the Mind of a Boss" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/1194032721?h=5d6405228f&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479", title: "BOSS: Step Inside the Mind of a Boss" },
       { type: "image", src: bossImg1 },
       { type: "image", src: bossImg2 },
       { type: "image", src: bossImg3 },
@@ -157,8 +157,8 @@ export const cases: Case[] = [
       { label: "Deliverables", value: "Innovation Day · Teaser film · Runway Experience" },
     ],
     media: [
-      { type: "vimeo", src: "https://player.vimeo.com/video/1000383165?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Burberry Innovation Day — Teaser" },
-      { type: "vimeo", src: "https://player.vimeo.com/video/1079712416?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Burberry — Open Spaces Runway Experience" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/1000383165?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Burberry Innovation Day: Teaser" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/1079712416?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Burberry: Open Spaces Runway Experience" },
       { type: "vimeo", src: "https://player.vimeo.com/video/1000381688?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Burberry Innovation Day 2023" },
     ],
     image: burberryImage,
@@ -167,7 +167,7 @@ export const cases: Case[] = [
     id: "dina-test-lab",
     category: "Campaign Platform",
     client: "Dina Försäkringar",
-    title: "Dina Försäkringar — Test Lab",
+    title: "Dina Försäkringar: Test Lab",
     tagline: "A vibrant test-lab world for a brand built around preparing for the unexpected.",
     brief:
       "Insurance advertising tends to default to reassurance: soft music, smiling families, fine print. Dina Försäkringar wanted something that stood out within a category built on caution. The brief: show what insurance actually covers, in the most direct and entertaining way possible.",
@@ -189,9 +189,9 @@ export const cases: Case[] = [
       { label: "Films", value: "Cycle · Slap Shot · Computer" },
     ],
     media: [
-      { type: "vimeo", src: "https://player.vimeo.com/video/1221116239?h=4f817916de&title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Dina Försäkringar — Cycle" },
-      { type: "vimeo", src: "https://player.vimeo.com/video/1221116238?h=4c390d58eb&title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Dina Försäkringar — Slap Shot" },
-      { type: "vimeo", src: "https://player.vimeo.com/video/1221116240?h=c8571309f8&title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Dina Försäkringar — Computer" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/1221116239?h=4f817916de&title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Dina Försäkringar: Cycle" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/1221116238?h=4c390d58eb&title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Dina Försäkringar: Slap Shot" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/1221116240?h=c8571309f8&title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Dina Försäkringar: Computer" },
       { type: "image", src: dinaPrint, layout: "full" },
     ],
     image: dinaImage,
@@ -201,7 +201,7 @@ export const cases: Case[] = [
     id: "ikea-midsommar",
     category: "Film",
     client: "IKEA Germany",
-    title: "IKEA — Midsommar Wahnsinns Preise",
+    title: "IKEA: Midsommar Wahnsinns Preise",
     tagline: "A deliberately unexpected take on IKEA Germany's midsummer sale campaign.",
     brief:
       "IKEA Germany's midsummer sale had always been handled with the familiar warmth of Swedish advertising: cosy, approachable, tonally safe. The ask was to make something that felt right for the German market without abandoning what makes IKEA IKEA. The catch: it had to be genuinely bold.",
@@ -217,7 +217,7 @@ export const cases: Case[] = [
       { label: "Deliverables", value: "Long version · 4×30\" spots" },
     ],
     media: [
-      { type: "vimeo", src: "https://player.vimeo.com/video/192279986?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "IKEA — Midsommar Wahnsinns Preise" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/192279986?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "IKEA: Midsommar Wahnsinns Preise" },
     ],
     image: ikeaImage,
   },
@@ -225,7 +225,7 @@ export const cases: Case[] = [
     id: "vasterbottensost",
     category: "Outdoor Campaign",
     client: "Västerbottensost",
-    title: "Västerbottensost — Conspiracy Theories",
+    title: "Västerbottensost: Conspiracy Theories",
     tagline: "The cheese nobody can explain. So we made that the campaign.",
     brief:
       "Västerbottensost has a genuine mystery at its core: nobody, not even NASA scientists, has been able to identify why it tastes the way it does. The cheese is produced once a year, in a single village in northern Sweden, and every attempt to replicate or explain its flavour has failed. The brief was to launch a new product variant without losing what makes the original brand extraordinary.",
@@ -240,7 +240,7 @@ export const cases: Case[] = [
       { label: "Format", value: "Outdoor · Digital · UGC platform" },
     ],
     media: [
-      { type: "vimeo", src: "https://player.vimeo.com/video/192295331?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Västerbottensost — Conspiracy Theories" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/192295331?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Västerbottensost: Conspiracy Theories" },
       { type: "image", src: vbPng, layout: "full" },
     ],
     image: vbImage,
@@ -249,7 +249,7 @@ export const cases: Case[] = [
     id: "rfsu-mix-pack",
     category: "Outdoor & Print Campaign",
     client: "RFSU",
-    title: "RFSU — Mix Pack",
+    title: "RFSU: Mix Pack",
     tagline: "A playful, unapologetically fun outdoor and print campaign inspired by the language of old adult 70's cinema.",
     brief:
       "RFSU is a sex-positive, politically and religiously independent non-profit with a long history of honest, direct communication about sexual health. The brief was as uncomplicated as it gets: sex is fun. Portray that. Make it feel good to look at.",
@@ -295,7 +295,7 @@ export const cases: Case[] = [
       { label: "Episodes", value: "5" },
     ],
     media: [
-      { type: "vimeo", src: "https://player.vimeo.com/video/192159644?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Sweden's Highest Tasting — EP01" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/192159644?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Sweden's Highest Tasting: EP01" },
     ],
     image: fjallfillImage,
   },
@@ -303,7 +303,7 @@ export const cases: Case[] = [
     id: "ikano-trial-loan",
     category: "Social Film",
     client: "Ikano Bank",
-    title: "Ikano Bank — Trial Loan",
+    title: "Ikano Bank: Trial Loan",
     tagline: "A contextual borrowing concept for the things customers dream of trying before buying.",
     brief:
       "Loan products are hard to sell emotionally. The decision to borrow money is rational, cautious, often anxious. Ikano Bank needed a campaign that made the prospect feel lighter, something that addressed the hesitation without dismissing it.",
@@ -319,7 +319,7 @@ export const cases: Case[] = [
       { label: "Format", value: "Social media campaign" },
     ],
     media: [
-      { type: "vimeo", src: "https://player.vimeo.com/video/192293534?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Ikano Bank — Trial Loan" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/192293534?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Ikano Bank: Trial Loan" },
     ],
     image: trialLoanImage,
   },

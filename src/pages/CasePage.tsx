@@ -80,7 +80,7 @@ export default function CasePage() {
             {current.category}
           </p>
           <p className="text-[#f0ede6]/35 text-[9px] tracking-[0.4em] uppercase font-sans mb-5">
-            {current.client} — {current.year}
+            {current.client} · {current.year}
           </p>
           <h1
             className="text-[#f0ede6] leading-tight max-w-4xl"
@@ -138,12 +138,12 @@ export default function CasePage() {
               return (
                 <div className="mt-3 flex flex-col gap-3">
                   {full.map((item, i) => (
-                    <img key={`full-${i}`} src={item.src as string} alt={`${current.title} — ${i + 1}`} className="w-full object-cover cursor-zoom-in" loading="lazy" onClick={() => setLightbox({ src: item.src as string, alt: `${current.title} — ${i + 1}` })} />
+                    <img key={`full-${i}`} src={item.src as string} alt={`${current.title}, ${i + 1}`} className="w-full object-cover cursor-zoom-in" loading="lazy" onClick={() => setLightbox({ src: item.src as string, alt: `${current.title}, ${i + 1}` })} />
                   ))}
                   {thirds.length > 0 && (
                     <div className="flex flex-col md:flex-row gap-3 items-start">
                       {thirds.map((item, i) => (
-                        <img key={`third-${i}`} src={item.src as string} alt={`${current.title} — ${i + 1}`} className="w-full md:flex-1 md:w-0 h-auto cursor-zoom-in" loading="lazy" onClick={() => setLightbox({ src: item.src as string, alt: `${current.title} — ${i + 1}` })} />
+                        <img key={`third-${i}`} src={item.src as string} alt={`${current.title}, ${i + 1}`} className="w-full md:flex-1 md:w-0 h-auto cursor-zoom-in" loading="lazy" onClick={() => setLightbox({ src: item.src as string, alt: `${current.title}, ${i + 1}` })} />
                       ))}
                     </div>
                   )}
@@ -153,7 +153,7 @@ export default function CasePage() {
                         <figure key={`story-${i}`} className="m-0">
                           <img
                             src={item.src as string}
-                            alt={item.caption ?? `${current.title} — ${i + 1}`}
+                            alt={item.caption ?? `${current.title}, ${i + 1}`}
                             className="w-full aspect-video object-cover cursor-zoom-in"
                             loading="lazy"
                             onClick={() => setLightbox({ src: item.src as string, alt: item.caption ?? current.title })}
@@ -175,7 +175,7 @@ export default function CasePage() {
                   {ungrouped.length > 0 && (
                     <div className={`grid gap-3 ${ungrouped.length === 1 ? "grid-cols-1" : "grid-cols-2"}`}>
                       {ungrouped.map((item, i) => (
-                        <img key={`un-${i}`} src={item.src as string} alt={`${current.title} — ${i + 1}`} className="w-full object-cover aspect-video cursor-zoom-in" loading="lazy" onClick={() => setLightbox({ src: item.src as string, alt: `${current.title} — ${i + 1}` })} />
+                        <img key={`un-${i}`} src={item.src as string} alt={`${current.title}, ${i + 1}`} className="w-full object-cover aspect-video cursor-zoom-in" loading="lazy" onClick={() => setLightbox({ src: item.src as string, alt: `${current.title}, ${i + 1}` })} />
                       ))}
                     </div>
                   )}
@@ -228,7 +228,7 @@ export default function CasePage() {
               "{current.quote.text}"
             </p>
             <p className="text-[#f0ede6]/35 text-[10px] tracking-[0.35em] uppercase font-sans">
-              {current.quote.author} — {current.quote.role}
+              {current.quote.author} · {current.quote.role}
             </p>
           </div>
         )}
@@ -304,7 +304,7 @@ export default function CasePage() {
             </p>
             <div>
               <p className="text-[#f0ede6]/35 text-[9px] tracking-[0.4em] uppercase font-sans mb-3">
-                {nextCase.category} — {nextCase.client}
+                {nextCase.category} · {nextCase.client}
               </p>
               <h3
                 className="text-[#f0ede6] leading-tight"
