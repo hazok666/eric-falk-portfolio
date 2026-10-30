@@ -57,9 +57,14 @@ export default function Home() {
           className="text-center px-8 will-change-transform select-none"
         >
           <p
-            className="text-[#f0ede6]/30 text-[10px] tracking-[0.55em] uppercase font-sans mb-10"
+            className="text-[#f0ede6]/30 text-[10px] tracking-[0.55em] uppercase font-sans mb-10 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-0"
           >
-            Creative Direction &nbsp;·&nbsp; Experience Design &nbsp;·&nbsp; Creative Technology
+            {/* Mobile: stacked, no dots. Desktop: one row with dots. Negative right margin cancels trailing letter-spacing so stacked lines centre optically. */}
+            <span className="-mr-[0.55em] md:mr-0">Creative Direction</span>
+            <span aria-hidden="true" className="hidden md:inline">&nbsp;·&nbsp;</span>
+            <span className="-mr-[0.55em] md:mr-0">Experience Design</span>
+            <span aria-hidden="true" className="hidden md:inline">&nbsp;·&nbsp;</span>
+            <span className="-mr-[0.55em] md:mr-0">Creative Technology</span>
           </p>
 
           <h1
@@ -77,8 +82,9 @@ export default function Home() {
             className="text-[#f0ede6]/45 font-sans text-sm md:text-base mt-8 max-w-xl mx-auto leading-relaxed"
             style={{ fontWeight: 300, letterSpacing: "0.02em" }}
           >
-            <span className="block">I turn emerging technology into human experiences.</span>
-            <span className="block">Ideas people step into, shape and share.</span>
+            {/* Mobile: one flowing paragraph. Desktop: each sentence on its own line. */}
+            <span className="md:block">I turn emerging technology into human experiences.</span>{" "}
+            <span className="md:block">Ideas people step into, shape and share.</span>
           </p>
         </div>
 
