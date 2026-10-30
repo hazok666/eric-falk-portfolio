@@ -105,17 +105,12 @@ export const cases: Case[] = [
     title: "Unilever × World Cup",
     tagline: "Create Your Fit — fans sprayed, AI styled, and 600+ one-of-a-kind jerseys were printed on the spot at the FIFA World Cup 2026™.",
     brief:
-      "The FIFA World Cup 2026™ is Unilever's biggest-ever sports partnership. In New York City, its House of Fresh creator hub put Rexona, Dove and Dove Men+Care at the heart of football culture — while Coca-Cola, adidas and FIFA itself competed for the same attention, in the same city, in the same weeks. The ask: first-of-its-kind technology with AI and personalisation at its core. Brand presence that didn't feel promotional, and a reason for creators to make, wear and share.",
+      "The FIFA World Cup 2026™ is Unilever's biggest-ever sports partnership. In New York City and Miami, its House of Fresh creator hubs put Rexona, Dove and Dove Men+Care at the heart of football culture — while Coca-Cola, adidas and FIFA itself competed for the same attention, in the same city, in the same weeks. The ask: first-of-its-kind technology with AI and personalisation at its core. Brand presence that didn't feel promotional, and a reason for creators to make, wear and share.",
     idea:
       "Football fandom is collective. Self-expression is individual. We set out to connect the two. Robots, light installations and AR were all on the table — but anything the room can't see isn't shareable, and a spectacle stays in the building. A memento leaves it. So we turned every creator into a designer: spray your own graffiti, let AI turn it into a one-of-a-kind jersey, and walk out wearing it.",
     execution:
       "Create Your Fit was a guided journey inside House of Fresh. At the Graffiti Station, guests picked up a phygital spray can — wrapped as Rexona, Dove or Dove Men+Care — and painted freehand on an LED canvas. At the AI Station, Google's Nano Banana 2 reinterpreted each sketch in six custom styles, from Retro and Street to Anime Panel, with every design checked against Unilever and FIFA guidelines. Anything that broke a rule was corrected, never rejected. Guests added their name and number, and minutes later collected a premium printed jersey in a House of Fresh gift box.",
-    quote: {
-      text: "Together, we created the next evolution of fan engagement. A truly personal, wearable moment for the football fans who stepped inside House of Fresh.",
-      author: "Ward De Kruiff",
-      role: "VP Consulting & Digital Innovation",
-    },
-    results: "600+ creators · 600+ one-of-a-kind jerseys worn in New York · 1M+ social media interactions · Top visited experience in House of Fresh",
+    results: "600+ creators · 600+ one-of-a-kind jerseys · 1M+ social media interactions · Top visited experience in House of Fresh",
     role: "Idea & Concept",
     year: "2026",
     credits: [
@@ -124,7 +119,7 @@ export const cases: Case[] = [
       { label: "Partners", value: "Made Real Lab · EPAM Physical Technology · Graffiti Plus" },
       { label: "Technology", value: "Google Cloud · Nano Banana 2 · Unity" },
       { label: "Brands", value: "Rexona · Dove · Dove Men+Care" },
-      { label: "Location", value: "House of Fresh, New York City" },
+      { label: "Location", value: "House of Fresh — New York City & Miami" },
     ],
     media: [
       { type: "vimeo", src: "https://player.vimeo.com/video/1241285803?h=8f4fe9820d&badge=0&autopause=0&player_id=0&app_id=58479", title: "Unilever x World Cup" },
