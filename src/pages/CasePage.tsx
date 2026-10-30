@@ -133,6 +133,7 @@ export default function CasePage() {
               if (imgs.length === 0) return null;
               const full = imgs.filter(m => m.layout === "full" || !m.layout);
               const thirds = imgs.filter(m => m.layout === "third");
+              const story = imgs.filter(m => m.layout === "story");
               const ungrouped = imgs.filter(m => !m.layout && full.length === 0);
               return (
                 <div className="mt-3 flex flex-col gap-3">
@@ -143,6 +144,31 @@ export default function CasePage() {
                     <div className="flex flex-col md:flex-row gap-3 items-start">
                       {thirds.map((item, i) => (
                         <img key={`third-${i}`} src={item.src as string} alt={`${current.title} — ${i + 1}`} className="w-full md:flex-1 md:w-0 h-auto cursor-zoom-in" loading="lazy" onClick={() => setLightbox({ src: item.src as string, alt: `${current.title} — ${i + 1}` })} />
+                      ))}
+                    </div>
+                  )}
+                  {story.length > 0 && (
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                      {story.map((item, i) => (
+                        <figure key={`story-${i}`} className="m-0">
+                          <img
+                            src={item.src as string}
+                            alt={item.caption ?? `${current.title} — ${i + 1}`}
+                            className="w-full aspect-video object-cover cursor-zoom-in"
+                            loading="lazy"
+                            onClick={() => setLightbox({ src: item.src as string, alt: item.caption ?? current.title })}
+                          />
+                          {item.caption && (
+                            <figcaption className="flex items-baseline gap-2 mt-2 px-1 md:px-0">
+                              <span className="text-[#c9a96e] text-[9px] tracking-[0.3em] font-sans">
+                                {String(i + 1).padStart(2, "0")}
+                              </span>
+                              <span className="text-[#f0ede6]/50 text-[10px] tracking-[0.25em] uppercase font-sans">
+                                {item.caption}
+                              </span>
+                            </figcaption>
+                          )}
+                        </figure>
                       ))}
                     </div>
                   )}

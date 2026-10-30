@@ -7,11 +7,12 @@ import burberryImage from "@/imports/Burberry_cover.webp";
 import dinaImage from "@/imports/Dina_Fo_rsa_kringar_KV_dator_1200x1200px.webp";
 import dinaPrint from "@/imports/DINA_PRINT_MOCK-UP_BIL.webp";
 import unileverKV from "@/imports/Unilever_WC_KV.webp";
-import unileverInstallation from "@/imports/Unilever_WC_installation.webp";
-import unileverStyleSheet from "@/imports/Unilever_WC_style_sheet.webp";
-import unileverSpray from "@/imports/Unilever_WC_spray.webp";
-import unileverAiStation from "@/imports/Unilever_WC_ai_station.webp";
-import unileverJersey from "@/imports/Unilever_WC_jersey.webp";
+import unileverSpray from "@/imports/Unilever_WC_01_spray.webp";
+import unileverAiStation from "@/imports/Unilever_WC_02_ai_station.webp";
+import unileverMakeItYours from "@/imports/Unilever_WC_03_make_it_yours.webp";
+import unileverPrint from "@/imports/Unilever_WC_04_print.webp";
+import unileverCollect from "@/imports/Unilever_WC_05_collect.webp";
+import unileverWear from "@/imports/Unilever_WC_06_wear.webp";
 import ikeaImage from "@/imports/IKEA_COVER.webp";
 import trialLoanImage from "@/imports/IMG_7190.webp";
 import fjallfillImage from "@/imports/Fjallfil_squarespace_cover.webp";
@@ -38,7 +39,9 @@ export interface Media {
   type: "vimeo" | "image";
   src: string | unknown;
   title?: string;
-  layout?: "full" | "third";
+  /** "story" = 3-column grid of 16:9 photos with captions, in reading order */
+  layout?: "full" | "third" | "story";
+  caption?: string;
 }
 
 export interface Case {
@@ -121,12 +124,13 @@ export const cases: Case[] = [
       { label: "Location", value: "House of Fresh, New York City" },
     ],
     media: [
-      { type: "vimeo", src: "https://player.vimeo.com/video/1241285803?h=8f4fe9820d&title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Unilever × World Cup — Create Your Fit" },
-      { type: "image", src: unileverInstallation, layout: "full" },
-      { type: "image", src: unileverStyleSheet, layout: "full" },
-      { type: "image", src: unileverSpray, layout: "third" },
-      { type: "image", src: unileverAiStation, layout: "third" },
-      { type: "image", src: unileverJersey, layout: "third" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/1241285803?h=8f4fe9820d&badge=0&autopause=0&player_id=0&app_id=58479", title: "Unilever x World Cup" },
+      { type: "image", src: unileverSpray, layout: "story", caption: "Spray your graffiti" },
+      { type: "image", src: unileverAiStation, layout: "story", caption: "AI styles it" },
+      { type: "image", src: unileverMakeItYours, layout: "story", caption: "Make it yours" },
+      { type: "image", src: unileverPrint, layout: "story", caption: "Printed live" },
+      { type: "image", src: unileverCollect, layout: "story", caption: "Collect your box" },
+      { type: "image", src: unileverWear, layout: "story", caption: "Wear it" },
     ],
     image: unileverKV,
     imagePosition: "35% center",
