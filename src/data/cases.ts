@@ -28,7 +28,6 @@ import rfsu3 from "@/imports/RFSU3_RBG.webp";
 import rfsu4 from "@/imports/RFSU4_RBG.webp";
 
 import moleCover from "@/imports/Mole_cover.webp";
-import moleKeyArt from "@/imports/Mole_key_art.webp";
 import moleStreets from "@/imports/Mole_01_streets.webp";
 import moleZoo from "@/imports/Mole_02_zoo.webp";
 import moleGraveyard from "@/imports/Mole_03_graveyard.webp";
@@ -352,7 +351,6 @@ export const cases: Case[] = [
     ],
     media: [
       { type: "vimeo", src: "https://player.vimeo.com/video/1244873256?h=d54bf4929a&badge=0&autopause=0&player_id=0&app_id=58479", title: "Mole on a Roll" },
-      { type: "image", src: moleKeyArt, layout: "full" },
       { type: "image", src: moleStreets, layout: "story", caption: "Streets" },
       { type: "image", src: moleZoo, layout: "story", caption: "Bronx Zoo" },
       { type: "image", src: moleGraveyard, layout: "story", caption: "Graveyard" },

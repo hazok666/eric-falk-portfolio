@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import Nav from "../components/Nav";
 import Lightbox from "../components/Lightbox";
+import VimeoEmbed from "../components/VimeoEmbed";
 import { cases } from "../data/cases";
 
 export default function CasePage() {
@@ -116,16 +117,7 @@ export default function CasePage() {
           <div className="reveal mb-16 -mx-8" style={revealStyle(0.05)}>
             {/* Videos */}
             {current.media.filter(m => m.type === "vimeo").map((item, i) => (
-              <div key={i} className="relative w-full mb-3" style={{ paddingBottom: "56.25%" }}>
-                <iframe
-                  src={item.src as string}
-                  title={item.title ?? current.title}
-                  className="absolute inset-0 w-full h-full"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                />
-              </div>
+              <VimeoEmbed key={i} src={item.src as string} title={item.title ?? current.title} />
             ))}
             {/* Images */}
             {(() => {
