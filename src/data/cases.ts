@@ -336,21 +336,21 @@ export const cases: Case[] = [
     category: "iPhone Game",
     client: "Personal project",
     title: "Mole on a Roll",
-    tagline: "An 80s New York skate runner for iPhone. Made for the love of games, entirely on my own.",
+    tagline: "An 80s New York skate runner for iPhone, inspired by the games I grew up with. Made entirely on my own.",
     briefLabel: "The Starting Point",
     brief:
-      "I love games, and I wanted to find out if I could make a good one myself. The bar was a game that feels right in your hands: tight controls, a reason to try one more run, and a world worth exploring. Doing every part myself, from the first idea to the finished game, was part of the challenge.",
+      "I grew up with the games of the 80s, and I wanted to find out if I could make a good one myself. Pixel art, chiptune music, and controls tight enough that you always want one more run. Doing every part myself, from the first idea to the finished game, was part of the challenge.",
     idea:
       "Moe the mole skates across 1980s New York with Officer Biscuit, a police dog, on his tail. Every time Moe takes a hit, the dog closes in. Seven stages, from the streets to the rooftops, plus an endless run. One thumb, one button: jump, kickflip, grind. Collect photos for the album and chase a new high score.",
     execution:
-      "Most of the work went into how it plays: the stages, pacing, obstacles, difficulty and the chase. I also set the art direction. Generative AI created the raw artwork. I directed the prompts, then cut, cleaned up and converted every image by hand into one consistent pixel-art sprite set, across seven stages from sunset streets to a moonlit graveyard. The game itself was vibe coded in HTML5, with music and sound effects written in code, then wrapped for iOS, tested on TestFlight and released on the App Store.",
+      "Most of the work went into how it plays: the stages, pacing, obstacles, difficulty and the chase, tuned until one more run felt irresistible. The look and sound go straight back to the 80s. Generative AI created the raw artwork. I directed the prompts, then cut, cleaned up and converted every image by hand into one consistent pixel-art sprite set, across seven stages from sunset streets to a moonlit graveyard. The chiptune music and sound effects are written in code. The game was vibe coded in HTML5, wrapped for iOS, tested on TestFlight and released on the App Store.",
     results: "7 stages plus an endless run · Designed, drawn and built by one person · Live on the App Store",
     role: "Concept, Game Design, Art Direction & Code",
     year: "2026",
     credits: [
       { label: "Platform", value: "iPhone · Landscape · Fully offline" },
       { label: "Stages", value: "Streets · Bronx Zoo · Subway · Central Park · Traffic · Graveyard · Rooftops" },
-      { label: "Built with", value: "Generative AI · Vibe coding · HTML5 · iOS" },
+      { label: "Built with", value: "Generative AI · Pixel art · Chiptune · Vibe coding · HTML5 · iOS" },
     ],
     media: [
       { type: "vimeo", src: "https://player.vimeo.com/video/1244873256?h=d54bf4929a&badge=0&autopause=0&player_id=0&app_id=58479", title: "Mole on a Roll" },
