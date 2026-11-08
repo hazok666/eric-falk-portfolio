@@ -165,7 +165,7 @@ export const cases: Case[] = [
     media: [
       { type: "vimeo", src: "https://player.vimeo.com/video/1000383165?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Burberry Innovation Day: Teaser" },
       { type: "vimeo", src: "https://player.vimeo.com/video/1079712416?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Burberry: Open Spaces Runway Experience" },
-      { type: "vimeo", src: "https://player.vimeo.com/video/1000381688?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Burberry Innovation Day 2023" },
+      { type: "vimeo", src: "https://player.vimeo.com/video/1000381688?h=4e69dc20bc&title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Burberry Innovation Day 2023" },
     ],
     image: burberryImage,
   },
