@@ -1,27 +1,49 @@
 import { useEffect, useRef } from "react";
-import Player from "@vimeo/player";
 
 interface VimeoEmbedProps {
   src: string;
   title: string;
 }
 
+const VIMEO_ORIGIN = "https://player.vimeo.com";
+
 /**
  * Vimeo iframe that returns to its poster frame when the video ends,
  * so Vimeo's "More from …" end screen (other videos on the account) never shows.
+ * Uses Vimeo's postMessage API directly; the end event arrives as "finish".
  */
 export default function VimeoEmbed({ src, title }: VimeoEmbedProps) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
-    if (!iframeRef.current) return;
-    const player = new Player(iframeRef.current);
-    const onEnded = () => {
-      player.unload().catch(() => {});
+    const iframe = iframeRef.current;
+    if (!iframe) return;
+
+    const post = (method: string, value?: string) =>
+      iframe.contentWindow?.postMessage(
+        JSON.stringify(value === undefined ? { method } : { method, value }),
+        VIMEO_ORIGIN,
+      );
+    const subscribe = () => post("addEventListener", "ended");
+
+    const onMessage = (e: MessageEvent) => {
+      if (e.origin !== VIMEO_ORIGIN || e.source !== iframe.contentWindow) return;
+      let data: { event?: string } = {};
+      try {
+        data = typeof e.data === "string" ? JSON.parse(e.data) : e.data;
+      } catch {
+        return;
+      }
+      if (data?.event === "ready") subscribe();
+      if (data?.event === "finish" || data?.event === "ended") post("unload");
     };
-    player.on("ended", onEnded);
+
+    window.addEventListener("message", onMessage);
+    iframe.addEventListener("load", subscribe);
+    subscribe(); // in case the player is already loaded
     return () => {
-      player.off("ended", onEnded);
+      window.removeEventListener("message", onMessage);
+      iframe.removeEventListener("load", subscribe);
     };
   }, [src]);
 
