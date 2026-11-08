@@ -343,8 +343,8 @@ export const cases: Case[] = [
     idea:
       "Moe the mole skates across 1980s New York with Officer Biscuit, a police dog, on his tail. Every time Moe takes a hit, the dog closes in. Seven stages, from the streets to the rooftops, plus an endless run. One thumb, one button: jump, kickflip, grind. Collect photos for the album and chase a new high score.",
     execution:
-      "Most of the work went into how it plays: the stages, pacing, obstacles, difficulty and the chase, tuned until one more run felt irresistible. The look and sound go straight back to the 80s. Generative AI created the raw artwork. I directed the prompts, then cut, cleaned up and converted every image by hand into one consistent pixel-art sprite set, across seven stages from sunset streets to a moonlit graveyard. The chiptune music and sound effects are written in code. The game was vibe coded in HTML5, wrapped for iOS, tested on TestFlight and released on the App Store.",
-    results: "7 stages plus an endless run · Designed, drawn and built by one person · Live on the App Store",
+      "Most of the work went into how it plays: the stages, pacing, obstacles, difficulty and the chase. The look and sound go straight back to the 80s. Generative AI created the raw artwork. I directed the prompts, then cut, cleaned up and converted every image by hand into one consistent pixel-art sprite set, across seven stages from sunset streets to a moonlit graveyard. The chiptune music and sound effects are written in code. The game was vibe coded in HTML5, wrapped for iOS, tested on TestFlight and released on the App Store.",
+    results: "Live on the App Store · Designed, drawn and built by one person",
     role: "Concept, Game Design, Art Direction & Code",
     year: "2026",
     credits: [
