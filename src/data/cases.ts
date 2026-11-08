@@ -60,6 +60,8 @@ export interface Case {
   title: string;
   tagline: string;
   brief: string;
+  /** Heading above the brief; defaults to "The Brief" */
+  briefLabel?: string;
   idea: string;
   execution: string;
   quote?: Quote;
@@ -335,12 +337,13 @@ export const cases: Case[] = [
     client: "Personal project",
     title: "Mole on a Roll",
     tagline: "An 80s New York skate runner for iPhone. One person, from idea to App Store.",
+    briefLabel: "The Starting Point",
     brief:
-      "Build a game entirely on my own, from idea to artwork to code to a finished app on the App Store. No studio, no developers, no production team. A real iPhone game that works fully offline, with no ads and no accounts.",
+      "I wanted to see if I could get a game onto the App Store, creating all of it on my own, from the first idea to the finished product.",
     idea:
       "Moe the mole skates across 1980s New York with Officer Biscuit, a police dog, on his tail. Every time Moe takes a hit, the dog closes in. Seven stages, from the streets to the rooftops, plus an endless run. One thumb, one button: jump, kickflip, grind. Collect photos for the album and chase a new high score.",
     execution:
-      "I designed the stages, pacing, obstacles and difficulty, and wrote the art direction. Generative AI created the raw artwork. I directed the prompts, then cut, cleaned up and converted every image by hand into one consistent pixel-art sprite set, across seven stages from sunset streets to a moonlit graveyard. The game itself was vibe coded in HTML5, with music and sound effects written in code, then wrapped for iOS, tested on TestFlight and released on the App Store.",
+      "I designed the stages, pacing, obstacles and difficulty, and set the art direction. Generative AI created the raw artwork. I directed the prompts, then cut, cleaned up and converted every image by hand into one consistent pixel-art sprite set, across seven stages from sunset streets to a moonlit graveyard. The game itself was vibe coded in HTML5, with music and sound effects written in code, then wrapped for iOS, tested on TestFlight and released on the App Store.",
     results: "Live on the App Store · 7 stages plus an endless run · Made by one person",
     role: "Concept, Game Design, Art Direction & Code",
     year: "2026",

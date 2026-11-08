@@ -180,7 +180,7 @@ export default function CasePage() {
         {/* Brief */}
         <div className="reveal mb-14" style={revealStyle(0.08)}>
           <p className="text-[#c9a96e] text-[9px] tracking-[0.45em] uppercase font-sans mb-4">
-            The Brief
+            {current.briefLabel ?? "The Brief"}
           </p>
           <p className="text-[#f0ede6]/70 text-base md:text-lg leading-relaxed font-sans" style={{ fontWeight: 300 }}>
             {current.brief}
