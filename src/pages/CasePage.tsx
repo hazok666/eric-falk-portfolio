@@ -148,13 +148,13 @@ export default function CasePage() {
                     </div>
                   )}
                   {story.length > 0 && (
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    <div className={`grid grid-cols-2 gap-3 ${story.length % 3 === 0 ? "md:grid-cols-3" : ""}`}>
                       {story.map((item, i) => (
                         <figure key={`story-${i}`} className="m-0">
                           <img
                             src={item.src as string}
                             alt={item.caption ?? `${current.title}, ${i + 1}`}
-                            className="w-full aspect-video object-cover cursor-zoom-in"
+                            className="w-full h-auto cursor-zoom-in"
                             loading="lazy"
                             onClick={() => setLightbox({ src: item.src as string, alt: item.caption ?? current.title })}
                           />

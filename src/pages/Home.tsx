@@ -162,9 +162,18 @@ export default function Home() {
         </div>
 
         {/* Row 6 – full width */}
-        <div>
+        <div className="mb-2">
           <CaseCard
             {...cases[8]}
+            className="w-full"
+            style={{ height: "clamp(260px, 50vh, 560px)" }}
+          />
+        </div>
+
+        {/* Row 7 – full width */}
+        <div>
+          <CaseCard
+            {...cases[9]}
             className="w-full"
             style={{ height: "clamp(260px, 50vh, 560px)" }}
           />

@@ -27,6 +27,13 @@ import rfsu2 from "@/imports/RFSU2_RFSU.webp";
 import rfsu3 from "@/imports/RFSU3_RBG.webp";
 import rfsu4 from "@/imports/RFSU4_RBG.webp";
 
+import moleCover from "@/imports/Mole_cover.webp";
+import moleKeyArt from "@/imports/Mole_key_art.webp";
+import moleStreets from "@/imports/Mole_01_streets.webp";
+import moleZoo from "@/imports/Mole_02_zoo.webp";
+import moleGraveyard from "@/imports/Mole_03_graveyard.webp";
+import moleRooftops from "@/imports/Mole_04_rooftops.webp";
+
 export interface Credit {
   label: string;
   value: string;
@@ -322,5 +329,37 @@ export const cases: Case[] = [
       { type: "vimeo", src: "https://player.vimeo.com/video/192293534?title=0&byline=0&portrait=0&badge=0&autopause=0&app_id=58479", title: "Ikano Bank: Trial Loan" },
     ],
     image: trialLoanImage,
+  },
+  {
+    id: "mole-on-a-roll",
+    category: "iPhone Game",
+    client: "Personal project",
+    title: "Mole on a Roll",
+    tagline: "An 80s New York skate runner for iPhone. Built with generative AI and my kids' ideas.",
+    brief:
+      "A personal project, made with my children Edward and Emmylou. The goal was a finished iPhone game, not a prototype: something that works fully offline, has no ads and no accounts, and gets through App Review.",
+    idea:
+      "Moe the mole skates across 1980s New York with Officer Biscuit, a police dog, on his tail. Every time Moe takes a hit, the dog closes in. Seven stages, from the streets to the rooftops, plus an endless run. One thumb, one button: jump, kickflip, grind. Collect photos for the album and chase a new high score. The kids' ideas went straight in. \"Can we go to a zoo?\" became the Bronx Zoo stage. \"Can Iggy be in the game?\" Iggy is in the game.",
+    execution:
+      "I designed the stages, pacing, obstacles and difficulty, and wrote the art direction. Generative AI created the raw artwork. I directed the prompts, then cut, cleaned up and converted every image by hand into one consistent pixel-art sprite set, across seven stages from sunset streets to a moonlit graveyard. The music and sound effects are written in code. The game was built in HTML5, wrapped for iOS, tested on TestFlight and approved by App Review.",
+    results: "Approved by App Review · Version 1.0 · 7 stages plus an endless run",
+    role: "Concept, Game Design & Art Direction",
+    year: "2026",
+    credits: [
+      { label: "Ideas", value: "Edward & Emmylou Falk" },
+      { label: "Platform", value: "iPhone · Landscape · Fully offline" },
+      { label: "Stages", value: "Streets · Bronx Zoo · Subway · Central Park · Traffic · Graveyard · Rooftops" },
+      { label: "Built with", value: "Generative AI · HTML5 · iOS" },
+    ],
+    media: [
+      { type: "vimeo", src: "https://player.vimeo.com/video/1244873256?h=d54bf4929a&badge=0&autopause=0&player_id=0&app_id=58479", title: "Mole on a Roll" },
+      { type: "image", src: moleKeyArt, layout: "full" },
+      { type: "image", src: moleStreets, layout: "story", caption: "Streets" },
+      { type: "image", src: moleZoo, layout: "story", caption: "Bronx Zoo" },
+      { type: "image", src: moleGraveyard, layout: "story", caption: "Graveyard" },
+      { type: "image", src: moleRooftops, layout: "story", caption: "Rooftops" },
+    ],
+    image: moleCover,
+    imagePosition: "center 35%",
   },
 ];
