@@ -336,15 +336,15 @@ export const cases: Case[] = [
     category: "iPhone Game",
     client: "Personal project",
     title: "Mole on a Roll",
-    tagline: "An 80s New York skate runner for iPhone. One person, from idea to App Store.",
+    tagline: "An 80s New York skate runner for iPhone. Made for the love of games, entirely on my own.",
     briefLabel: "The Starting Point",
     brief:
-      "I wanted to see if I could get a game onto the App Store, creating all of it on my own, from the first idea to the finished product.",
+      "I love games, and I wanted to find out if I could make a good one myself. The bar was a game that feels right in your hands: tight controls, a reason to try one more run, and a world worth exploring. Doing every part myself, from the first idea to the finished game, was part of the challenge.",
     idea:
       "Moe the mole skates across 1980s New York with Officer Biscuit, a police dog, on his tail. Every time Moe takes a hit, the dog closes in. Seven stages, from the streets to the rooftops, plus an endless run. One thumb, one button: jump, kickflip, grind. Collect photos for the album and chase a new high score.",
     execution:
-      "I designed the stages, pacing, obstacles and difficulty, and set the art direction. Generative AI created the raw artwork. I directed the prompts, then cut, cleaned up and converted every image by hand into one consistent pixel-art sprite set, across seven stages from sunset streets to a moonlit graveyard. The game itself was vibe coded in HTML5, with music and sound effects written in code, then wrapped for iOS, tested on TestFlight and released on the App Store.",
-    results: "Live on the App Store · 7 stages plus an endless run · Made by one person",
+      "Most of the work went into how it plays: the stages, pacing, obstacles, difficulty and the chase. I also set the art direction. Generative AI created the raw artwork. I directed the prompts, then cut, cleaned up and converted every image by hand into one consistent pixel-art sprite set, across seven stages from sunset streets to a moonlit graveyard. The game itself was vibe coded in HTML5, with music and sound effects written in code, then wrapped for iOS, tested on TestFlight and released on the App Store.",
+    results: "7 stages plus an endless run · Designed, drawn and built by one person · Live on the App Store",
     role: "Concept, Game Design, Art Direction & Code",
     year: "2026",
     credits: [
