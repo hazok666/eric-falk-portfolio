@@ -11,7 +11,7 @@ export default function CasePage() {
   const heroImgRef = useRef<HTMLDivElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
 
-  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null);
+  const [lightbox, setLightbox] = useState<{ src: string; alt: string; zoomSrc?: string } | null>(null);
   const currentIdx = cases.findIndex((c) => c.id === id);
   const current = cases[currentIdx];
   const nextCase = cases[(currentIdx + 1) % cases.length];
@@ -130,7 +130,15 @@ export default function CasePage() {
               return (
                 <div className="mt-3 flex flex-col gap-3">
                   {full.map((item, i) => (
-                    <img key={`full-${i}`} src={item.src as string} alt={`${current.title}, ${i + 1}`} className="w-full object-cover cursor-zoom-in" loading="lazy" onClick={() => setLightbox({ src: item.src as string, alt: `${current.title}, ${i + 1}` })} />
+                    <div key={`full-${i}`} className="relative group">
+                      <img src={item.src as string} alt={item.caption ?? `${current.title}, ${i + 1}`} className="w-full object-cover cursor-zoom-in" loading="lazy" onClick={() => setLightbox({ src: item.src as string, alt: item.caption ?? `${current.title}, ${i + 1}`, zoomSrc: item.zoomSrc as string | undefined })} />
+                      {Boolean(item.zoomSrc) && (
+                        <span className="pointer-events-none absolute bottom-3 right-3 bg-black/60 px-3 py-2 text-[#f0ede6]/80 text-[9px] tracking-[0.3em] uppercase font-sans opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                          <span className="hidden md:inline">Click to read</span>
+                          <span className="md:hidden">Tap to read</span>
+                        </span>
+                      )}
+                    </div>
                   ))}
                   {thirds.length > 0 && (
                     <div className="flex flex-col md:flex-row gap-3 items-start">
@@ -319,7 +327,7 @@ export default function CasePage() {
         </Link>
       </div>
 
-      {lightbox && <Lightbox src={lightbox.src} alt={lightbox.alt} onClose={() => setLightbox(null)} />}
+      {lightbox && <Lightbox src={lightbox.src} alt={lightbox.alt} zoomSrc={lightbox.zoomSrc} onClose={() => setLightbox(null)} />}
 
       {/* Footer */}
       <footer className="border-t border-[#f0ede6]/8 px-8 md:px-12 py-10 flex flex-col md:flex-row items-center justify-between gap-4">

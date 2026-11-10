@@ -1,3 +1,5 @@
+import bossBoard from "@/imports/BOSS_board.webp";
+import bossBoardZoom from "@/imports/BOSS_board_zoom.webp";
 import bossImage from "@/imports/BOSS.webp";
 import bossImg1 from "@/imports/2025_BOSS_x_AMF1_immersive_spatial_experience_16x9_001__original_kopiera.webp";
 import bossImg2 from "@/imports/2025_BOSS_x_AMF1_immersive_spatial_experience_16x9_002__original_kopiera.webp";
@@ -51,6 +53,8 @@ export interface Media {
   /** "story" = 3-column grid of 16:9 photos with captions, in reading order */
   layout?: "full" | "third" | "story";
   caption?: string;
+  /** High-resolution version opened when zooming in the lightbox (e.g. text-heavy case boards) */
+  zoomSrc?: string | unknown;
 }
 
 export interface Case {
@@ -99,6 +103,7 @@ export const cases: Case[] = [
     ],
     media: [
       { type: "vimeo", src: "https://player.vimeo.com/video/1194032721?h=5d6405228f&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479", title: "BOSS: Step Inside the Mind of a Boss" },
+      { type: "image", src: bossBoard, zoomSrc: bossBoardZoom, layout: "full", caption: "BOSS × Aston Martin F1® × Apple Vision Pro case board" },
       { type: "image", src: bossImg1 },
       { type: "image", src: bossImg2 },
       { type: "image", src: bossImg3 },
