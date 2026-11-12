@@ -280,6 +280,23 @@ export default function CasePage() {
             ))}
           </dl>
         </div>
+
+        {/* Call to action, e.g. App Store */}
+        {current.link && (
+          <div className="reveal mt-16" style={revealStyle(0.24)}>
+            <a
+              href={current.link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-4 border border-[#c9a96e]/40 hover:border-[#c9a96e] hover:bg-[#c9a96e]/10 px-7 py-4 text-[#c9a96e] text-[10px] tracking-[0.35em] uppercase font-sans transition-colors duration-300"
+            >
+              {current.link.label}
+              <svg width="20" height="8" viewBox="0 0 20 8" fill="none" className="transition-transform duration-300 group-hover:translate-x-1">
+                <path d="M0 4H18M15 1L19 4L15 7" stroke="#c9a96e" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          </div>
+        )}
       </div>
 
       {/* ── Next Case ── */}

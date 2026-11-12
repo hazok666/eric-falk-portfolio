@@ -70,6 +70,8 @@ export interface Case {
   execution: string;
   quote?: Quote;
   results?: string;
+  /** Optional call-to-action link shown at the bottom of the case, e.g. an App Store page */
+  link?: { label: string; url: string };
   role: string;
   year: string;
   credits: Credit[];
@@ -350,6 +352,7 @@ export const cases: Case[] = [
     execution:
       "Most of the work went into how it plays: the stages, pacing, obstacles, difficulty and the chase. The look and sound go straight back to the 80s. Generative AI created the raw artwork. I directed the prompts, then cut, cleaned up and converted every image by hand into one consistent pixel-art sprite set, across seven stages from sunset streets to a moonlit graveyard. The chiptune music and sound effects are written in code. The game was vibe coded in HTML5, wrapped for iOS, tested on TestFlight and released on the App Store.",
     results: "Live on the App Store · Designed, drawn and built by one person",
+    link: { label: "Get it on the App Store", url: "https://apps.apple.com/app/mole-on-a-roll/id6826217936" },
     role: "Concept, Game Design, Art Direction & Code",
     year: "2026",
     credits: [
